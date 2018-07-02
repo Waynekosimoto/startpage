@@ -115,17 +115,6 @@
 
   }
 
-  //Button-function
-  function toggleDarkMode() {
-    if (!(document.body.classList.contains("dark"))) {
-      darkMode(true);
-    }else{
-      darkMode(false);
-    }
-
-    
-  }
-
   function getQueryVariable(variable)
 {
        var query = window.location.search.substring(1);
@@ -141,29 +130,6 @@
 console.log(getQueryVariable("engine"));
 console.log(getQueryVariable("darkmode"));
 
-function lookupEngine(){
-
-  eng = getQueryVariable("engine");
-  
-
-  //TODO: This is probably not the best way to do this
-  lookup = {    //Lookup chart of all search engines
-    'google': Google,
-    'reddit': Reddit,
-    'facebook': Facebook,
-    'youtube': Youtube,
-    'twitch': Twitch,
-    
-  
-  }
-
-  return lookup[eng];
-
-  //DEBUG
-  console.log("HASH: " + hash.name);
-  //DEBUG
-
-}
 
 
   initialize();
